@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 620">
+  <defs>
+    <clipPath id="ring-clip">
+      <circle cx="310" cy="310" r="305"/>
+    </clipPath>
+  </defs>
+
+  <!-- checkerboard ring -->
+  <g clip-path="url(#ring-clip)">
+    <circle cx="310" cy="310" r="305" fill="#111111"/>
+    <circle cx="310" cy="310" r="305" fill="#f5efdc"/>
+    <g id="checker-ring">
+      <!-- generated checker squares around the ring -->
+    </g>
+  </g>
+
+  <!-- build checker ring programmatically-ish via repeated rects using a pattern -->
+  <g>
+    <circle cx="310" cy="310" r="305" fill="none" stroke="#111111" stroke-width="46"
+      stroke-dasharray="19.2 19.2" />
+    <circle cx="310" cy="310" r="305" fill="none" stroke="#f5efdc" stroke-width="46"
+      stroke-dasharray="19.2 19.2" stroke-dashoffset="19.2"/>
+  </g>
+
+  <circle cx="310" cy="310" r="305" fill="none" stroke="#111111" stroke-width="4"/>
+  <circle cx="310" cy="310" r="256" fill="none" stroke="#111111" stroke-width="4"/>
+
+  <!-- teal center -->
+  <circle cx="310" cy="310" r="252" fill="#3d9187"/>
+
+  <!-- wordmark -->
+  <text x="310" y="235" text-anchor="middle" fill="#f5efdc"
+    font-family="'Kaushan Script', 'Brush Script MT', cursive" font-size="92">The</text>
+  <text x="310" y="345" text-anchor="middle" fill="#f5efdc"
+    font-family="'Kaushan Script', 'Brush Script MT', cursive" font-size="118">Harley</text>
+  <text x="310" y="410" text-anchor="middle" fill="#f5efdc"
+    font-family="'Kaushan Script', 'Brush Script MT', cursive" font-size="72">Co.</text>
+
+  <text x="310" y="465" text-anchor="middle" fill="#f5efdc"
+    font-family="'Jost', 'Arial Narrow', sans-serif" font-size="26" letter-spacing="3"
+    font-weight="700">FRESH OFF THE ROUTE</text>
+</svg>
