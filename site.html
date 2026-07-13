@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Harley Co. | Fresh Off The Route — Saint Johns, FL</title>
+<meta name="description" content="The Harley Co. bakes small-batch goods every week in Saint Johns, FL. See this week's menu and order for pickup or delivery.">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Jost:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="checker-strip" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <img src="images/logo.svg" alt="The Harley Co. logo" class="brand-logo">
+      <span class="brand-name">The Harley Co.</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="#menu">This Week's Menu</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#about">Our Story</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <img src="images/logo.svg" alt="The Harley Co. badge" class="hero-badge">
+      <h1>Fresh Off The Route</h1>
+      <p class="hero-sub">
+        Small-batch baked goods, made weekly and delivered around Saint Johns, FL.
+        The menu changes every week &mdash; so does what's waiting on your porch.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">See This Week's Menu</a>
+        <a href="#order" class="btn btn-outline">Place an Order</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="checker-strip" aria-hidden="true"></div>
+
+  <!-- THIS WEEK'S MENU -->
+  <section id="menu" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Baked This Week</p>
+      <h2>The Route Sheet</h2>
+      <p class="section-lede">
+        A short, seasonal lineup baked fresh every week. Order early &mdash; batches are small and sell out.
+      </p>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- populated by js/menu-data.js -->
+      </div>
+
+      <p class="menu-note">
+        Menu updates every Monday. Follow along on Instagram to see what's coming down the route next.
+      </p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">The Process</p>
+      <h2>How It Works</h2>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>See the Weekly Menu</h3>
+          <p>New bakes are posted every Monday. Quantities are limited, so check back often.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Place Your Order</h3>
+          <p>Order by Thursday at 6pm for that week's route. Choose pickup or local delivery.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>We Bake It Fresh</h3>
+          <p>Everything is made in small batches, baked the day before your pickup or delivery.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <h3>Fresh Off The Route</h3>
+          <p>Pickup Saturday morning, or we deliver straight to your door around Saint Johns, FL.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="wrap about-inner">
+      <div class="about-text">
+        <p class="eyebrow">Our Story</p>
+        <h2>Baked Small. Delivered Local.</h2>
+        <p>
+          The Harley Co. started with one oven, one neighborhood, and a simple idea:
+          bake a small, honest menu every week and get it to people fresh &mdash; no
+          warehouses, no shelf life, just good baking on a short route.
+        </p>
+        <p>
+          We're based in Saint Johns, FL, and every item is made in small batches so
+          it's baked close to the day it reaches you. The menu changes with the season
+          and whatever's worth getting excited about that week.
+        </p>
+      </div>
+      <div class="about-badge">
+        <img src="images/logo.svg" alt="The Harley Co. badge">
+      </div>
+    </div>
+  </section>
+
+  <div class="checker-strip" aria-hidden="true"></div>
+
+  <!-- ORDER FORM -->
+  <section id="order" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Get On The Route</p>
+      <h2>Place an Order</h2>
+      <p class="section-lede">
+        Fill this out and it'll open a pre-filled email to us &mdash; just hit send.
+        We'll confirm your order and payment details by reply.
+      </p>
+
+      <form id="order-form" class="order-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-row two-col">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label>This Week's Items</label>
+          <div class="checkbox-grid" id="order-items">
+            <!-- populated by js/menu-data.js -->
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label>Pickup or Delivery?</label>
+          <div class="radio-row">
+            <label class="radio-option"><input type="radio" name="fulfillment" value="Pickup" checked> Pickup (Saturday)</label>
+            <label class="radio-option"><input type="radio" name="fulfillment" value="Delivery"> Local Delivery</label>
+          </div>
+        </div>
+
+        <div class="form-row" id="address-row" hidden>
+          <label for="address">Delivery Address</label>
+          <input type="text" id="address" name="address" placeholder="Street, Saint Johns, FL">
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Notes (allergies, special requests, etc.)</label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-wide">Send Order Request</button>
+        <p class="form-note">This opens your email app with your order filled in &mdash; nothing is sent until you press send there.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT / SOCIAL -->
+  <section id="contact" class="section section-alt contact">
+    <div class="wrap contact-inner">
+      <div>
+        <p class="eyebrow">Say Hello</p>
+        <h2>Find Us</h2>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:colekouremetis2@gmail.com">colekouremetis2@gmail.com</a></li>
+          <li><strong>Location:</strong> Saint Johns, FL</li>
+          <li><strong>Delivery Area:</strong> Saint Johns &amp; surrounding neighborhoods</li>
+        </ul>
+      </div>
+      <div class="social-block">
+        <p class="eyebrow">Follow The Route</p>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram &rarr;</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook &rarr;</a>
+        </div>
+        <p class="social-note">(Update these links to your real profiles in index.html)</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="checker-strip" aria-hidden="true"></div>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img src="images/logo.svg" alt="The Harley Co. logo" class="footer-logo">
+    <p>&copy; <span id="year"></span> The Harley Co. &middot; Saint Johns, FL &middot; Fresh Off The Route</p>
+  </div>
+</footer>
+
+<script src="js/menu-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
