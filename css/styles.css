@@ -151,10 +151,18 @@ body::after { right: 0; }
 }
 
 .brand-logo {
+  display: inline-block;
   width: 46px;
   height: 46px;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo-zoom {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  transform: scale(1.05);
 }
 
 .brand-name {
@@ -210,12 +218,13 @@ body::after { right: 0; }
 }
 
 .hero-badge {
+  display: block;
   width: 450px;
   height: 450px;
   max-width: 42vw;
   flex-shrink: 0;
   border-radius: 50%;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 .hero-text {
@@ -339,12 +348,14 @@ body::after { right: 0; }
 
 .about-text p { color: #4a4a42; }
 
-.about-badge img {
-  max-width: 260px;
+.about-badge-crop {
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
   margin: 0 auto;
   border-radius: 50%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 /* ---------- Order form ---------- */
@@ -481,10 +492,11 @@ input:focus, textarea:focus {
 }
 
 .footer-logo {
+  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 .footer-inner p {
