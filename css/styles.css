@@ -1,12 +1,12 @@
 /* ---------- Design tokens ---------- */
 :root {
-  --teal: #91c5c0;
+  --teal: #a3d6b6;
   --teal-dark: #2c6b63;
   --cream: #f5efdc;
   --cream-soft: #faf6ea;
   --ink: #1a1a1a;
-  --mustard: #ff6a13;
-  --mustard-dark: #e0570a;
+  --mustard: #99b5cb;
+  --mustard-dark: #7d94a6;
   --line: #e4dcc4;
 
   --font-script: 'Kaushan Script', 'Brush Script MT', cursive;
@@ -205,16 +205,32 @@ body::after { right: 0; }
 
 /* ---------- Hero ---------- */
 .hero {
+  position: relative;
+  overflow: hidden;
   background: var(--teal);
   color: var(--cream);
   padding: 72px 0 84px;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/pattern-treats.svg");
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  opacity: 0.14;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero-inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 48px;
+  justify-content: flex-start;
+  gap: 32px;
 }
 
 .hero-badge {
@@ -223,6 +239,7 @@ body::after { right: 0; }
   height: 450px;
   max-width: 42vw;
   flex-shrink: 0;
+  margin-left: -32px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -510,8 +527,8 @@ input:focus, textarea:focus {
   .about-inner { grid-template-columns: 1fr; }
   .about-badge { order: -1; }
   .contact-inner { grid-template-columns: 1fr; }
-  .hero-inner { flex-direction: column; }
-  .hero-badge { width: 220px; height: 220px; max-width: 60vw; }
+  .hero-inner { flex-direction: column; justify-content: center; }
+  .hero-badge { width: 220px; height: 220px; max-width: 60vw; margin-left: 0; }
   .brand { margin-left: 0; }
 }
 
