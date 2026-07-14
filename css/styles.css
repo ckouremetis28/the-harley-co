@@ -262,7 +262,7 @@ body::after { right: 0; }
 }
 
 .hero h1 {
-  font-family: 'Castoro Titling', serif;
+  font-family: 'IM Fell English SC', serif;
   font-size: clamp(2.3rem, 5.2vw, 3.7rem);
   color: #3b281a;
   margin-bottom: 18px;
