@@ -122,6 +122,14 @@ body::after { right: 0; }
 }
 .btn-outline:hover { background: rgba(74, 50, 32, 0.08); }
 
+.hero-actions .btn-primary {
+  background: transparent;
+  border-color: var(--mustard);
+  color: var(--mustard);
+  box-shadow: none;
+}
+.hero-actions .btn-primary:hover { background: rgba(153, 181, 203, 0.12); }
+
 .btn-wide { width: 100%; text-align: center; }
 
 /* ---------- Header ---------- */
@@ -243,7 +251,7 @@ body::after { right: 0; }
   height: 450px;
   max-width: 42vw;
   flex-shrink: 0;
-  margin-left: 96px;
+  margin-left: 48px;
   border-radius: 50%;
   overflow: hidden;
 }
