@@ -176,7 +176,7 @@ body::after { right: 0; }
 .brand-name {
   font-family: var(--font-script);
   font-size: 1.5rem;
-  color: var(--teal-dark);
+  color: #3b281a;
 }
 
 .site-nav {
