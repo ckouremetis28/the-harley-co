@@ -117,10 +117,10 @@ body::after { right: 0; }
 
 .btn-outline {
   background: transparent;
-  border-color: var(--cream);
-  color: var(--cream);
+  border-color: var(--ink);
+  color: var(--ink);
 }
-.btn-outline:hover { background: rgba(245, 239, 220, 0.12); }
+.btn-outline:hover { background: rgba(26, 26, 26, 0.08); }
 
 .btn-wide { width: 100%; text-align: center; }
 
@@ -216,10 +216,11 @@ body::after { right: 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../images/pattern-treats.svg");
-  background-repeat: repeat;
-  background-size: 150px 150px;
-  opacity: 0.14;
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.09;
   pointer-events: none;
   z-index: 0;
 }
@@ -242,6 +243,7 @@ body::after { right: 0; }
   height: 450px;
   max-width: 42vw;
   flex-shrink: 0;
+  margin-left: 96px;
   border-radius: 50%;
   overflow: hidden;
 }
