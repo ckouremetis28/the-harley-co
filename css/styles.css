@@ -117,18 +117,18 @@ body::after { right: 0; }
 
 .btn-outline {
   background: transparent;
-  border-color: #4a3220;
-  color: #4a3220;
+  border-color: #3b281a;
+  color: #3b281a;
 }
-.btn-outline:hover { background: rgba(74, 50, 32, 0.08); }
+.btn-outline:hover { background: rgba(59, 40, 26, 0.08); }
 
 .hero-actions .btn-primary {
   background: transparent;
-  border-color: #4a3220;
-  color: #4a3220;
+  border-color: #3b281a;
+  color: #3b281a;
   box-shadow: none;
 }
-.hero-actions .btn-primary:hover { background: rgba(74, 50, 32, 0.08); }
+.hero-actions .btn-primary:hover { background: rgba(59, 40, 26, 0.08); }
 
 .btn-wide { width: 100%; text-align: center; }
 
@@ -264,7 +264,7 @@ body::after { right: 0; }
 .hero h1 {
   font-family: 'Castoro Titling', serif;
   font-size: clamp(2.3rem, 5.2vw, 3.7rem);
-  color: #4a3220;
+  color: #3b281a;
   margin-bottom: 18px;
 }
 
@@ -272,7 +272,7 @@ body::after { right: 0; }
   max-width: 560px;
   margin: 0 auto 34px;
   font-size: 1.1rem;
-  color: rgba(74, 50, 32, 0.85);
+  color: rgba(59, 40, 26, 0.85);
 }
 
 .hero-actions {
