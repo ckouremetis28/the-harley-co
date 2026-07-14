@@ -117,10 +117,10 @@ body::after { right: 0; }
 
 .btn-outline {
   background: transparent;
-  border-color: var(--ink);
-  color: var(--ink);
+  border-color: var(--teal-dark);
+  color: var(--teal-dark);
 }
-.btn-outline:hover { background: rgba(26, 26, 26, 0.08); }
+.btn-outline:hover { background: rgba(44, 107, 99, 0.08); }
 
 .btn-wide { width: 100%; text-align: center; }
 
@@ -256,7 +256,7 @@ body::after { right: 0; }
 .hero h1 {
   font-family: 'Castoro Titling', serif;
   font-size: clamp(2.6rem, 6vw, 4.2rem);
-  color: var(--ink);
+  color: var(--teal-dark);
   margin-bottom: 18px;
 }
 
@@ -264,7 +264,7 @@ body::after { right: 0; }
   max-width: 560px;
   margin: 0 auto 34px;
   font-size: 1.1rem;
-  color: rgba(26, 26, 26, 0.85);
+  color: rgba(44, 107, 99, 0.85);
 }
 
 .hero-actions {
