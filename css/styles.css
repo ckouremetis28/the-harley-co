@@ -316,7 +316,7 @@ body::after { right: 0; }
 
 .menu-card .tag {
   align-self: flex-start;
-  background: #9dbacb;
+  background: #c4d6e0;
   color: var(--ink);
   font-size: 0.72rem;
   font-weight: 700;
