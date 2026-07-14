@@ -124,11 +124,11 @@ body::after { right: 0; }
 
 .hero-actions .btn-primary {
   background: transparent;
-  border-color: var(--mustard);
-  color: var(--mustard);
+  border-color: #4a3220;
+  color: #4a3220;
   box-shadow: none;
 }
-.hero-actions .btn-primary:hover { background: rgba(153, 181, 203, 0.12); }
+.hero-actions .btn-primary:hover { background: rgba(74, 50, 32, 0.08); }
 
 .btn-wide { width: 100%; text-align: center; }
 
