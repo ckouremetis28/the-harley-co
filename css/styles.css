@@ -272,6 +272,7 @@ body::after { right: 0; }
   max-width: 560px;
   margin: 0 auto 34px;
   font-size: 1.1rem;
+  font-weight: 500;
   color: rgba(59, 40, 26, 0.85);
 }
 
