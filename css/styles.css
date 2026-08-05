@@ -247,16 +247,13 @@ body::after { right: 0; }
 
 .hero-badge {
   display: block;
+  width: 450px;
+  height: 450px;
+  max-width: 42vw;
   flex-shrink: 0;
   margin-left: 48px;
-  max-width: 560px;
-}
-
-.hero-badge-img {
-  display: block;
-  height: 450px;
-  width: auto;
-  max-width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .hero-text {
@@ -544,8 +541,7 @@ input:focus, textarea:focus {
   .about-badge { order: -1; }
   .contact-inner { grid-template-columns: 1fr; }
   .hero-inner { flex-direction: column; justify-content: center; }
-  .hero-badge { max-width: 70vw; margin-left: 0; }
-  .hero-badge-img { height: 220px; }
+  .hero-badge { width: 220px; height: 220px; max-width: 60vw; margin-left: 0; }
   .brand { margin-left: 0; }
 }
 
